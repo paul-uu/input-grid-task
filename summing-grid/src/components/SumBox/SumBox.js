@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/shared.css';
 
 class SumBox extends Component {
@@ -54,10 +55,14 @@ class SumBox extends Component {
   render() {
     return (
       <div className='box box--sum'>
-        <input class='box__input' readOnly value={ this.formatSum(this.props.sum) } />
+        <input className='box__input' readOnly value={ this.formatSum(this.props.sum) } />
       </div>
     )
   }
+}
+
+SumBox.propTypes = {
+  sum: PropTypes.number.isRequired
 }
 
 export default SumBox;

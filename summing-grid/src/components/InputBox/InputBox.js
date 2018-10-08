@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../../styles/shared.css';
 
 class InputBox extends Component {
@@ -24,10 +25,15 @@ class InputBox extends Component {
   render() {
     return (
       <div className='box box--input'>
-        <input class='box__input' type='number' value={ this.state.num } onChange={ this.handleChange } />
+        <input className='box__input' type='number' value={ this.state.num } onChange={ this.handleChange } />
       </div>
     )
   }
 };
+
+InputBox.propTypes = {
+  updateNums: PropTypes.func.isRequired,
+  inputId: PropTypes.number.isRequired
+}
 
 export default InputBox;
