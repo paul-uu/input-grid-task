@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SumBox from './SumBox';
+import SumBox from '../../../components/SumBox/SumBox';
 
 it('renders the SumBox component', () => {
   const wrapper = shallow(<SumBox sum={0} />);

@@ -12,11 +12,11 @@ class SumBox extends Component {
   }
 
   formatSum(sum) {
-    if (sum > 999) {
+    if (sum > 999) { //to-do, apply formatting to negative numbers
 
       const maxThousandDigits = 6;
-      const maxMillionDigits = 9;
-      const maxBillionDigits = 12;
+      const maxMillionDigits  = 9;
+      const maxBillionDigits  = 12;
       const maxTrillionDigits = 15;
       let numSuffix;
       let decimalPosition;
