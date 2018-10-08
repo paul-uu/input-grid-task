@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../styles/shared.css';
 
 class SumBox extends Component {
   constructor(props) {
@@ -53,7 +54,7 @@ class SumBox extends Component {
   render() {
     return (
       <div className='box box--sum'>
-        <input readOnly value={ this.formatSum(this.props.sum) } />
+        <input class='box__input' readOnly value={ this.formatSum(this.props.sum) } />
       </div>
     )
   }

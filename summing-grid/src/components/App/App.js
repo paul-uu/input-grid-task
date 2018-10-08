@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import InputBox from './InputBox';
-import SumBox from './SumBox';
-import '../styles/App.css';
+import InputBox from '../InputBox/InputBox';
+import SumBox from '../SumBox/SumBox';
+import './App.css';
 
 class App extends Component {
   constructor(props) {

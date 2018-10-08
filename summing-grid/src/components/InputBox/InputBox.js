@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../styles/shared.css';
 
 class InputBox extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class InputBox extends Component {
   render() {
     return (
       <div className='box box--input'>
-        <input type='number' min='0' value={ this.state.num } onChange={ this.handleChange } />
+        <input class='box__input' type='number' value={ this.state.num } onChange={ this.handleChange } />
       </div>
     )
   }
